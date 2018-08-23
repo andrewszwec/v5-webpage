@@ -43,7 +43,7 @@
           <span class="navbar-divider d-mobile-none"></span>
 
           <nav class="nav nav-navbar">
-            <a class="nav-link" href="solutions.html">Solutions</a>
+            <a class="nav-link" href="#">Solutions</a>
             <a class="nav-link" href="contact.html">Contact</a>
           </nav>
         </section>
@@ -57,86 +57,68 @@
     <main class="main-content">
     <!--
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-      | Cover - Block 12
-      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-      !-->
-      <!-- Header -->
-      <header class="header text-white py-10 h-fullscreen" style="background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);">
-        <div class="container text-center">
-
-          <div class="row h-100">
-            <div class="col-lg-8 mx-auto align-self-center">
-
-              <h1>Get instant <span class="text-primary" data-typing="Feedback, Tips, Analysis, Ratings"></span></h1>
-              <br>
-              <p class="lead-2">MOOC Analyser reviews your video content and provides feedback on your delivery, message and content.</p>
-
-              <br>
-              <hr class="w-100px">
-              <br>
-
-              <p class="gap-xy">
-                <a class="btn btn-lg btn-round btn-light mw-200" href="upload.html">Start Now</a>
-                <a class="btn btn-lg btn-round btn-outline-light mw-200" href="#" data-provide="lightbox"><i class="fa fa-play mr-2"></i> Play Video</a>
-              </p>
-
-            </div>
-          </div>
-
-        </div>
-      </header>
-      <!-- END Header -->
-
-      <!--
-      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-      | Features - Block 6
+      | Contact - Block 3
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
 
-      <section class="section bg-gray pb-0 overflow-hidden">
+      <section class="section">
         <div class="container">
-          <div class="row align-items-center">
 
-            <div class="col-md-5 pb-8">
-              <h2>Features</h2>
-              <p class="lead">
-                Our platform is the easiest way to get video feedback.<br>
-                One tap and your video is uploaded.<br>
-                Get feedback from a trusted mentor in seconds.<br>
-                Your audience gets the best you.</p>
-              <br>
+          <h2 class="text-center">Contact Us</h2>
 
-              <div class="media">
-                <div class="lead-5 text-danger lh-2 mr-5"><i class="icon-heart"></i></div>
-                <div class="media-body">
-                  <h6>Instant Feedback</h6>
-                  <p>Get instant and reliable feedback on your delivery, message and content.</p>
+          <form class="row gap-y mt-8" action="../assets/php/sendmail.php" method="POST" data-form="mailer">
+            <div class="col-lg-6">
+
+              <div class="alert alert-success d-on-success">We received your message and will contact you back soon.</div>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input class="form-control form-control-lg" type="text" name="firstname" placeholder="First Name">
+                </div>
+
+                <div class="form-group col-md-6">
+                  <input class="form-control form-control-lg" type="text" name="lastname" placeholder="Last Name">
+                </div>
+
+                <div class="form-group col-md-6">
+                  <input class="form-control form-control-lg" type="email" name="email" placeholder="Email">
+                </div>
+
+                <div class="form-group col-md-6">
+                  <input class="form-control form-control-lg" type="text" name="phone" placeholder="Phone">
                 </div>
               </div>
 
-              <br>
+              <div class="form-group">
+                <textarea class="form-control form-control-lg" rows="4" placeholder="What do you have in mind?" name="message"></textarea>
+              </div>
 
-              <div class="media">
-                <div class="lead-5 text-warning lh-2 mr-5"><i class="icon-video"></i></div>
-                <div class="media-body">
-                  <h6>Always Ready</h6>
-                  <p>We don’t have off days, we are on our game 365 days providing consistency in feedback</p>
-                </div>
+              <button class="btn btn-lg btn-primary" type="submit">Send message</button>
+
+            </div>
+
+
+            <div class="col-lg-5 ml-auto text-center text-lg-left">
+              <hr class="d-lg-none">
+              <h5>Sydney, NSW</h5>
+              <p>11 York Street, Level 3<br>Sydney, NSW, 2000</p>
+              <p>+61 405 597 182</p>
+              <p>andrew@thecognitiveco.com</p>
+              <div class="fw-400">Follow Us</div>
+              <div class="social social-sm social-inline">                
+                <a class="social-facebook" href="https://www.facebook.com/thecognitiveco/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a class="social-twitter" href="https://twitter.com/TheCognitiveCo" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a class="social-linkedin" href="https://www.linkedin.com/company/thecognitiveco/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a class="social-medium" href="https://medium.com/@RoboAndy" target="_blank"><i class="fa fa-medium"></i></a>
               </div>
             </div>
+          </form>
 
-
-            <div class="col-md-5 text-center mx-auto">
-              <img src="assets/img/product_transp.png" alt="..." data-aos="fade-left" data-aos-delay="200">
-            </div>
-
-          </div>
         </div>
+
       </section>
-      
 
 
-    <!-- END Main -->  
     </main>
 
 

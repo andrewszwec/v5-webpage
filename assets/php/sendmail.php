@@ -17,11 +17,11 @@ $mail = new PHPMailer;
 | more chance to receive the email at gmail, yahoo, hotmail, etc.
 |
 */
-$reciever        = "info@yourdomain.com";
-$default_subject = "Email from yoursite.com";
+$reciever        = "andrew@thecognitiveco.com";
+$default_subject = "Email from thecognitiveco.com";
 
-$sender_email    = "noreply@yourdomain.com";
-$sender_name     = "YourDomain.com";
+$sender_email    = "andrew.szwec@outlook.com";
+$sender_name     = "Thecognitiveco.com";
 $error_message   = "An error occured. Please try again later.";
 
 

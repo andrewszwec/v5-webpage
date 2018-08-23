@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>TheSaaS — Responsive Bootstrap SaaS, Software & WebApp Template</title>
+
+    <!-- Styles -->
+    <link href="assets/css/page.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" href="assets/img/favicon.png">
+
+    <!--  Open Graph Tags -->
+    <meta property="og:title" content="TheSaaS">
+    <meta property="og:description" content="A responsive, professional, and multipurpose SaaS, Software, Startup and WebApp landing template powered by Bootstrap 4.">
+    <meta property="og:image" content="http://thetheme.io/thesaas/assets/img/og-img.jpg">
+    <meta property="og:url" content="http://thetheme.io/thesaas/">
+    <meta name="twitter:card" content="summary_large_image">
+  </head>
+
+  <body>
+
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
+          <div class="container">
+    
+            <div class="navbar-left">
+              <button class="navbar-toggler" type="button">&#9776;</button>
+              <a class="navbar-brand" href="index.html">
+                <img class="logo-dark" src="assets/img/tcc-logo-dark.png" alt="logo">
+                <img class="logo-light" src="assets/img/tcc-logo.png" alt="logo">
+              </a>
+            </div>
+    
+            <section class="navbar-mobile">
+              <span class="navbar-divider d-mobile-none"></span>
+    
+              <nav class="nav nav-navbar">
+                <a class="nav-link" href="solutions.html">Solutions</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+              </nav>
+            </section>
+    
+            <a class="btn btn-sm btn-round btn-dark" href="upload.html">Upload File</a>
+    
+          </div>
+        </nav><!-- /.navbar -->
+
+      </div>
+    </nav><!-- /.navbar -->
+
+    <!-- POPULATE PAGE -->
+    <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Block 4
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+
+      <!-- Header -->
+      <header class="header text-white" style="background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);">
+        <div class="container text-center">
+
+          <div class="row">
+            <div class="col-md-8 mx-auto">
+
+              <h1>How it works</h1>
+              <p class="lead-2 opacity-90 mt-6">Upload your MP4. Its easy!</p>
+
+            </div>
+          </div>
+
+        </div>
+      </header><!-- /.header -->
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Content - Block 3
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section">
+        <div class="container">
+          <div class="row gap-y align-items-center">
+
+            <div class="col-md-6 text-center text-md-right">
+                <form action="http://52.204.45.138/api/mooc/uploadFile" method=post enctype=multipart/form-data>
+                  <p><input type=file name=file>
+                      <input type=submit value=Upload>
+                  </form>
+                  <h2>Your Analysis Key is:</h2>
+                  123424234<br><br>
+                  <h2>Get Custom Dictionary</h2>
+                  <p>You custom dictionary is being created. Please wait the length of your video before submitting.</p>
+                  <form action="http://52.204.45.138/api/mooc/getResults" method="post">
+                  <div class="wrapper">      
+                    <div class="uploader">
+                        <label for="key">Enter your key:</label>
+                        <input type="text" id="key" name="key" value={}>
+                    </div>
+                    <button type="submit">Submit</button>
+                  </div>
+                  </form>
+            </div>
+
+            <div class="col-md-6">
+              <img class="rounded-md ml-md-4" src="assets/img/thumb/15.jpg" alt="...">
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+          <div class="row gap-y align-items-center">
+  
+            <div class="col-6 col-lg-3">
+              <a href="index.html"><img src="assets/img/tcc-logo-dark.png" alt="logo"></a>
+            </div>
+  
+            <div class="col-6 col-lg-3 text-right order-lg-last">
+              <div class="social">
+                <a class="social-facebook" href="https://www.facebook.com/thecognitiveco/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a class="social-twitter" href="https://twitter.com/TheCognitiveCo" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a class="social-linkedin" href="https://www.linkedin.com/company/thecognitiveco/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a class="social-medium" href="https://medium.com/@RoboAndy" target="_blank"><i class="fa fa-medium"></i></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-6">
+              <div class="nav nav-bold nav-uppercase nav-trim justify-content-lg-center">
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="https://medium.com/@RoboAndy" target="_blank">Blog</a>
+                <a class="nav-link" href="https://s3-ap-southeast-2.amazonaws.com/thecognitiveco/New+Website+Terms+and+Conditions+of+Use+--+6303362695961772032.pdf" target="_blank">Policy</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </footer><!-- /.footer -->
+
+    <!-- /POPULATE PAGE -->
+
+    <!-- Scripts -->
+    <script src="assets/js/page.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+  </body>
+</html>
