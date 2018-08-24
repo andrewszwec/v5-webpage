@@ -1,14 +1,22 @@
 'use strict';
 
 function reportProgress(elem, percentage) {
-  console.log(percentage);
+  elem.css("width", percentage + "%")
+}
+
+function setKey(key) {
+  $(".AnalysisKeyBox").addClass("AnalysisKeyBox--visible")
+  $(".AnalysisKeyBox__key").html(key)
 }
 
 function ajaxTheForm(form) {
   var url = form.prop("action")
-  var file = form.find("input[name=file]")[0].files[0]
-  var progressBar = $(".ProgressBar")
-
+  var formData = new FormData(form[0]);
+  var progressBar = $(".ProgressBar");
+  var progressBarBar = $(".ProgressBar__bar");
+  progressBarBar.css("width", "0%")
+  progressBar.removeClass("ProgressBar--success")
+  progressBar.removeClass("ProgressBar--failure")
 
   var q = $.ajax({
     xhr: function() {
@@ -16,27 +24,28 @@ function ajaxTheForm(form) {
       xhr.upload.addEventListener("progress", function(e) {
         if (e.lengthComputable) {
           var percentComplete = 100 * (e.loaded / e.total)
-          reportProgress(progressBar, percentComplete)
+          reportProgress(progressBarBar, percentComplete)
         }
       }, false)
 
       return xhr
     },
     url: url,
-    type: "PUT",
-    contentType: 'binary/octet-stream',
+    type: "POST",
     processData: false,
-    data: file
+    contentType: false,
+    cache: false,
+    data: formData
   })
 
   q.done(function(data) {
-    console.log("DONE", data)
-    progressBar.prop("value", 0)
+    setKey(data.key)
+    progressBar.addClass("ProgressBar--success")
   })
 
   q.fail(function() {
-    console.log("Failure")
-    progressBar.prop("value", 0)
+    progressBarBar.css("width", "0%")
+    progressBar.addClass("ProgressBar--failure")
   })
 }
 
