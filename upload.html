@@ -87,7 +87,7 @@
       <div class="container">
         <div class="row gap-y align-items-center">
 
-          <div class="col-md-6 text-center text-md-right">
+          <div class="col-md-6 text-center text-md-left">
             <form class="FileUploadForm" action="https://www.andrewszwec.com/api/mooc/uploadFile" method=post enctype=multipart/form-data>
               <p><input type=file name=file>
                 <input type=submit value=Upload>
@@ -97,22 +97,22 @@
               <h2>Your Analysis Key is:</h2>
               <span class="AnalysisKeyBox__key"></span><br><br>
               </div>
+            <br>
             <h2>Get Custom Dictionary</h2>
-            <p>You custom dictionary is being created. Please wait the length of your video before submitting.</p>
+            <br>
+            <p>Your custom dictionary is being created. Please wait the length of your video before submitting.</p>
             <form action="https://www.andrewszwec.com/api/mooc/getResults" method="post">
               <div class="wrapper">
                 <div class="uploader">
-                  <label for="key">Enter your key:</label>
-                  <input type="text" id="key" name="key" value={}>
+                  <label for="key">Enter your Analysis Key here:</label>
+                  <input type="text" id="key" name="key" value="Enter Analysis Key Here....">
                 </div>
+                <!-- <input type=submit value=Submit> -->
                 <button type="submit">Submit</button>
               </div>
             </form>
           </div>
 
-          <div class="col-md-6">
-            <img class="rounded-md ml-md-4" src="assets/img/thumb/15.jpg" alt="...">
-          </div>
 
         </div>
       </div>
