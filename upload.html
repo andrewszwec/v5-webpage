@@ -88,9 +88,10 @@
         <div class="row gap-y align-items-center">
 
           <div class="col-md-6 text-center text-md-right">
-            <form action="https://www.andrewszwec.com/api/mooc/uploadFile" method=post enctype=multipart/form-data>
+            <form class="FileUploadForm" action="https://www.andrewszwec.com/api/mooc/uploadFile" method=post enctype=multipart/form-data>
               <p><input type=file name=file>
                 <input type=submit value=Upload>
+              <p><progress class="ProgressBar" max=100 value=0></p>
             </form>
             <h2>Your Analysis Key is:</h2>
             123424234<br><br>
@@ -151,6 +152,7 @@
     <!-- Scripts -->
     <script src="assets/js/page.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/upload.js"></script>
 
   </body>
 </html>
