@@ -6,6 +6,14 @@
   display: block;
 }
 
+.ResultsBox {
+  display: none;
+}
+
+.ResultsBox--visible {
+  display: block;
+}
+
 .ProgressBar {
   height: 20px;
   width: 100%;

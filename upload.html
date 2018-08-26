@@ -88,6 +88,8 @@
         <div class="row gap-y align-items-center">
 
           <div class="col-md-6 text-center text-md-left">
+              <h2>Upload Video</h2> 
+              <br>
             <form class="FileUploadForm" action="https://www.andrewszwec.com/api/mooc/uploadFile" method=post enctype=multipart/form-data>
               <p><input type=file name=file>
                 <input type=submit value=Upload>
@@ -96,24 +98,33 @@
             <div class="AnalysisKeyBox">
               <h2>Your Analysis Key is:</h2>
               <span class="AnalysisKeyBox__key"></span><br><br>
-              </div>
+            </div>
             <br>
             <h2>Get Custom Dictionary</h2>
             <br>
             <p>Your custom dictionary is being created. Please wait the length of your video before submitting.</p>
-            <form action="https://www.andrewszwec.com/api/mooc/getResults" method="post">
+            <!-- CHANGE ACTION!! -->
+            <!-- "https://www.andrewszwec.com/api/mooc/getResults" -->
+            <form class="GetResultsForm" action="https://www.andrewszwec.com/api/mooc/getResults" method="post">
               <div class="wrapper">
                 <div class="uploader">
                   <label for="key">Enter your Analysis Key here:</label>
                   <input type="text" id="key" name="key" value="Enter Analysis Key Here....">
                 </div>
+                <br>
                 <!-- <input type=submit value=Submit> -->
-                <button type="submit">Submit</button>
+                <button type="submit">Submit</button><br><br>
               </div>
             </form>
-          </div>
+            <!-- Print out the Results -->
+            <div class="ResultsBox">
+              <h2>Results</h2>
+              <span class="ResultsBox__Text"></span><br><br>
+            </div>
 
 
+            <!-- End Align Text -->
+          </div> 
         </div>
       </div>
     </section>
