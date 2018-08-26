@@ -25,7 +25,24 @@
   </head>
 
   <body>
-
+    <script>
+      var urlParams = new URLSearchParams(window.location.search);
+      var key, query_key;
+      query_key = urlParams.get('key');
+      if (query_key == null){
+        key = "Enter Analysis Key Here...."
+      }
+      else {
+        key = query_key
+      }
+      
+      window.onload = function() { 
+        document.getElementById("key").value = key;
+      }
+      
+       
+    </script> 
+  
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
@@ -109,7 +126,7 @@
               <div class="wrapper">
                 <div class="uploader">
                   <label for="key">Enter your Analysis Key here:</label>
-                  <input type="text" id="key" name="key" value="Enter Analysis Key Here....">
+                  <input type="text" id="key" name="key">
                 </div>
                 <br>
                 <!-- <input type=submit value=Submit> -->
@@ -121,7 +138,6 @@
               <h2>Results</h2>
               <span class="ResultsBox__Text"></span><br><br>
             </div>
-
 
             <!-- End Align Text -->
           </div> 
