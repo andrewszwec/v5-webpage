@@ -30,7 +30,7 @@
       var key, query_key;
       query_key = urlParams.get('key');
       if (query_key == null){
-        key = "Enter Analysis Key Here...."
+        key = "Enter key...."
       }
       else {
         key = query_key
@@ -85,8 +85,8 @@
         <div class="row">
           <div class="col-md-8 mx-auto">
 
-            <h1>How it works</h1>
-            <p class="lead-2 opacity-90 mt-6">Upload your MP4. Its easy!</p>
+            <h1>Your analysis is done!</h1>
+            <p class="lead-2 opacity-90 mt-6">See below for results.</p>
 
           </div>
         </div>
@@ -105,21 +105,28 @@
         <div class="row gap-y align-items-center">
 
           <div class="col-md-6 text-center text-md-left">
-              <h2>Upload Video</h2> 
-              <br>
-            <form class="FileUploadForm" action="https://www.andrewszwec.com/api/mooc/uploadFile" method=post enctype=multipart/form-data>
-              <p>Enter email address: <input type=email name=email><br><br>
-                <input type=file name=file> 
-                <input type=submit value=Upload>
-              <div class="ProgressBar"><div class="ProgressBar__bar"></div></div>
+             
+            <h2>Get Custom Dictionary</h2>
+            <br>
+            
+            <!-- CHANGE ACTION!! -->
+            <!-- "https://www.andrewszwec.com/api/mooc/getResults" -->
+            <form class="GetResultsForm" action="https://www.andrewszwec.com/api/mooc/getResults" method="post">
+              <div class="wrapper">
+                <div class="uploader">
+                  <label for="key">Enter your Analysis Key here:</label>
+                  <input type="text" id="key" name="key">
+                </div>
+                <br>
+                <!-- <input type=submit value=Submit> -->
+                <button type="submit">Submit</button><br><br>
+              </div>
             </form>
-            <div class="AnalysisKeyBox">
-              <h2>Upload Complete!</h2>
-              <p>An email will be sent to you when the analysis is complete.</p>
-              <p>Your analysis key is:</p>
-              <span class="AnalysisKeyBox__key"></span><br><br>
+            <!-- Print out the Results -->
+            <div class="ResultsBox">
+              <h2>Results</h2>
+              <span class="ResultsBox__Text"></span><br><br>
             </div>
-          
 
             <!-- End Align Text -->
           </div> 
